@@ -22,13 +22,118 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <div class="slides">
   <section>
     <section>
-      <h2 class="top-2">GitHub - Tips &amp; tricks</h2>
+      <h2>GitHub - Tips &amp; tricks</h2>
       <p class="me">Maxence POUTORD</p>
       <p class="me-link">
         <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a> |
         <a href="http://www.maxpou.fr/"><i class="fa fa-globe"></i> maxpou.fr</a> |
         <a href="mailto:hello@maxpou.fr"><i class="fa fa-envelope-o"></i> hello@maxpou.fr</a>
       </p>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Github = Git + hub</h2>
+      <p><a href="https://hub.github.com/">hub.github.com</a></p>
+    </section>
+    <section>
+      <h2>Installation</h2>
+      <pre><code class="bash" data-trim>
+# MacOS
+$ brew install hub
+
+# Unix
+$ git clone https://github.com/github/hub.git && cd hub
+# assuming that `~/bin` is in your PATH:
+$ script/build -o ~/bin/hub
+      </code></pre>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Or Github = SVN + hub</h2>
+      <img data-src="img/inflatocat.png" style="border:none;width: 33%;">
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>GMF: a Markdown on steroid</h2>
+    </section>
+    <section>
+      <h2>Tables</h2>
+      <pre><code class="bash" data-trim>
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+      </code></pre>
+    </section>
+    <section>
+      <h2>Syntax color</h2>
+      <pre class="fragment" data-fragment-index="0"><code class="javascript" data-trim>
+```
+if (score === 100) {
+  console.log("Yihaaa!")
+}
+```
+      </code></pre>
+      <pre class="fragment" data-fragment-index="1"><code data-trim>
+```javascript
+if (score === 100) {
+  console.log("Yihaaa!")
+}
+```
+      </code></pre>
+    </section>
+    <section>
+      <h2>...and other HTML Tags</h2>
+      <pre><code class="bash" data-trim>
+<details>
+  <summary>License (MIT)</summary>
+  The MIT License (MIT)
+
+  Copyright (c) 2017 Maxence POUTORD
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software")
+  [...]
+</details>
+    </code></pre>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Github Pages</h2>
+    </section>
+    <section>
+      <h2>Example</h2>
+    </section>
+    <section>
+      <h2>Think about gitmodules</h2>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>URL everywhere</h2>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Bonus</h2>
+    </section>
+    <section>
+        <h2>Octodex</h2>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Full article</h2>
+      <h3>maxpou.fr/github-secrets</h3>
+    </section>
+    <section>
+      <h2>Thank you</h2>
+      <h3>Questions?</h3>
+      <img data-src="img/riddlocat.png" style="border:none;width: 33%;">
     </section>
   </section>
 </div>
@@ -43,7 +148,7 @@ Reveal.initialize({
   progress: true,
   slideNumber: true,
   history: true,
-  center: false,
+  center: true,
   width: 1000,
   height: 700,
 

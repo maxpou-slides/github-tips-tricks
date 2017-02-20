@@ -54,6 +54,18 @@ $ script/build -o ~/bin/hub
       <h2>Or Github = SVN + hub</h2>
       <img data-src="img/inflatocat.png" style="border:none;width: 33%;">
     </section>
+    <section>
+      <h2>Example</h2>
+      <pre class="fragment"><code class="bash" data-trim>
+$ git clone https://github.com/user/repo
+$ git commit -m 'my amazing work!'
+$ git push
+      </code></pre>
+      <pre class="fragment"><code class="bash" data-trim>
+$ svn co --depth empty https://github.com/user/repo
+$ svn commit -m 'my amazing work!'
+      </code></pre>
+    </section>
   </section>
   <section>
     <section>
@@ -86,6 +98,14 @@ if (score === 100) {
       </code></pre>
     </section>
     <section>
+      <h2>Task Lists</h2>
+      <pre class="fragment" data-fragment-index="1"><code data-trim>
+- [x] Prepare slides
+- [ ] Give this talk
+- [x] @maxpou fix issue #1
+      </code></pre>
+    </section>
+    <section>
       <h2>...and other HTML Tags</h2>
       <pre><code class="bash" data-trim>
 <details>
@@ -109,12 +129,20 @@ if (score === 100) {
       <h2>Example</h2>
     </section>
     <section>
-      <h2>Think about gitmodules</h2>
+      <h2>Managing dependencies?</h2>
+      <p class="fragment">Think about git submodules!</p>
+      <pre><code class="bash" data-trim>
+git submodule add https://github.com/hakimel/reveal.js
+      </pre></code>
     </section>
   </section>
   <section>
     <section>
       <h2>URL everywhere</h2>
+    </section>
+    <section>
+      <h2>Removing whithespaces</h2>
+      whitespace.gif
     </section>
   </section>
   <section>
@@ -128,7 +156,7 @@ if (score === 100) {
   <section>
     <section>
       <h2>Full article</h2>
-      <h3>maxpou.fr/github-secrets</h3>
+      <a href="http://www.maxpou.fr/github-tips-and-tricks/"><i class="fa fa-globe" aria-hidden="true"></i> maxpou.fr/github-tips-and-tricks</a>
     </section>
     <section>
       <h2>Thank you</h2>

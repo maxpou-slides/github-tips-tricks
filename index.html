@@ -33,12 +33,12 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
   </section>
   <section>
     <section>
-      <h2>Github = Git + hub</h2>
+      <h2>#1 - Github = Git + hub</h2>
       <p><a href="https://hub.github.com/">hub.github.com</a></p>
     </section>
     <section>
       <h2>Installation</h2>
-      <pre><code class="bash" data-trim>
+      <pre><code class="bash fragment" data-trim>
 # MacOS
 $ brew install hub
 
@@ -46,12 +46,38 @@ $ brew install hub
 $ git clone https://github.com/github/hub.git && cd hub
 # assuming that `~/bin` is in your PATH:
 $ script/build -o ~/bin/hub
+</code><code class="bash fragment" data-trim>
+$ alias git='hub'
+</code><code class="bash fragment" data-trim>
+$ git --version
+git version 2.7.4
+hub version 2.3.0
       </code></pre>
+    </section>
+    <section>
+      <h2>$ hub</h2>
+      <pre><code class="bash" data-trim>
+$ git
+
+# ...
+
+These GitHub commands are provided by hub:
+
+ pull-request   Open a pull request on GitHub
+ fork           Make a fork of a remote repository on GitHub and add as remote
+ create         Create this repository on GitHub and add GitHub as origin
+ browse         Open a GitHub page in the default browser
+ compare        Open a compare page on GitHub
+ release        List or create releases
+ issue          List or create issues
+ ci-status      Show the CI status of a commit
+
+      </pre></code>
     </section>
   </section>
   <section>
     <section>
-      <h2>Or Github = SVN + hub</h2>
+      <h2>#2 - ...or Github = SVN + hub</h2>
       <img data-src="img/inflatocat.png" style="border:none;width: 33%;">
     </section>
     <section>
@@ -69,7 +95,7 @@ $ svn commit -m 'my amazing work!'
   </section>
   <section>
     <section>
-      <h2>GMF: a Markdown on steroid</h2>
+      <h2>#3 - GMF: a Markdown on steroid</h2>
     </section>
     <section>
       <h2>Tables</h2>
@@ -98,6 +124,13 @@ if (score === 100) {
       </code></pre>
     </section>
     <section>
+      <h2>blockquote</h2>
+      <pre><code data-trim>
+&gt; this text is quoted
+      </code></pre>
+      <p class="fragment">Or better: select text and press R</p>
+    </section>
+    <section>
       <h2>Task Lists</h2>
       <pre class="fragment" data-fragment-index="1"><code data-trim>
 - [x] Prepare slides
@@ -123,34 +156,52 @@ if (score === 100) {
   </section>
   <section>
     <section>
-      <h2>Github Pages</h2>
+      <h2>#4 - Github Pages</h2>
+      <p><a href="https://pages.github.com/">pages.github.com</a></p>
     </section>
     <section>
-      <h2>Example</h2>
+      <h2></h2>
     </section>
     <section>
       <h2>Managing dependencies?</h2>
-      <p class="fragment">Think about git submodules!</p>
-      <pre><code class="bash" data-trim>
-git submodule add https://github.com/hakimel/reveal.js
+      <p class="fragment" data-fragment-index="0">Think about git submodules!</p>
+      <pre class="fragment" data-fragment-index="0"><code class="bash" data-trim>
+$ git submodule add https://github.com/hakimel/reveal.js
       </pre></code>
     </section>
   </section>
   <section>
     <section>
-      <h2>URL everywhere</h2>
+      <h2>#5 - URL everywhere</h2>
+      <p><i>To exist, each action must have a specific URL.</i></p>
     </section>
     <section>
       <h2>Removing whithespaces</h2>
-      whitespace.gif
+      <p><a href="https://github.com/maxpou-slides/github-tips-tricks/commit/2616cbecc713389f8455b066711bc74891a593a6">github.com/user/repo/commit/commit_sha1?w=1</a></p>
+      <a href="https://github.com/maxpou-slides/github-tips-tricks/commit/2616cbecc713389f8455b066711bc74891a593a6" target="_blank">
+        <img data-src="img/whitespace.gif" style="border:none;width: 50%;">
+      </a>
+    </section>
+    <section>
+      <h2>.diff & .patch</h2>
+      <ul>
+        <li>Commit: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db" target="_blank">github.com/user/repo/commit/example</a></li>
+        <li>Diff: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db.diff" target="_blank">github.com/user/repo/commit/example.diff</a></li>
+        <li>Patch: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db.patch" target="_blank">github.com/user/repo/commit/example.patch</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>highlight lines</h2>
+      <p><a href="https://github.com/maxpou-slides/github-tips-tricks/blob/8d09d0d17dc086972d39a004939cf3259fa4a6ee/index.html#L24-L31" target="_blank">github.com/user/repo/commit/example#L3-L5</a></p>
     </section>
   </section>
   <section>
     <section>
-      <h2>Bonus</h2>
+      <h2>#6 - Emoji 😍</h2>
     </section>
     <section>
-        <h2>Octodex</h2>
+      <h2>Good example: Atom contributing’s style guides</h2>
+      <img data-src="img/commit-message-atom.png" style="border:none;width: 50%;">
     </section>
   </section>
   <section>
@@ -162,7 +213,14 @@ git submodule add https://github.com/hakimel/reveal.js
       <h2>Thank you</h2>
       <h3>Questions?</h3>
       <img data-src="img/riddlocat.png" style="border:none;width: 33%;">
+      <br>
+      <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a>
     </section>
+  </section>
+  <section>
+    <h2>Bonus</h2>
+    <p>I have some stikers !</p>
+    <img data-src="img/stikers.png" style="border:none;width: 33%;">
   </section>
 </div>
 </div>

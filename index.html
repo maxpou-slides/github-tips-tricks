@@ -78,24 +78,25 @@ These GitHub commands are provided by hub:
   <section>
     <section>
       <h2>#2 - ...or Github = SVN + hub</h2>
-      <img data-src="img/inflatocat.png" style="border:none;width: 33%;">
     </section>
     <section>
       <h2>Example</h2>
-      <pre class="fragment"><code class="bash" data-trim>
+      <pre><code class="bash" data-trim>
 $ git clone https://github.com/user/repo
 $ git commit -m 'my amazing work!'
 $ git push
       </code></pre>
-      <pre class="fragment"><code class="bash" data-trim>
+      <pre><code class="bash" data-trim>
 $ svn co --depth empty https://github.com/user/repo
 $ svn commit -m 'my amazing work!'
       </code></pre>
+      <img data-src="img/inflatocat.png" style="border:none;width: 33%;">
     </section>
   </section>
   <section>
     <section>
       <h2>#3 - GMF: a Markdown on steroid</h2>
+      <p><a href="https://guides.github.com/features/mastering-markdown/">guides.github.com/features/mastering-markdown</a></p>
     </section>
     <section>
       <h2>Tables</h2>
@@ -128,7 +129,8 @@ if (score === 100) {
       <pre><code data-trim>
 &gt; this text is quoted
       </code></pre>
-      <p class="fragment">Or better: select text and press R</p>
+      <p class="fragment">Or better: select text and press <kbd>&nbsp;R&nbsp;</kbd></p>
+      <p class="fragment">Want more shortcut key? press <kbd>&nbsp;?&nbsp;</kbd></p>
     </section>
     <section>
       <h2>Task Lists</h2>
@@ -160,7 +162,22 @@ if (score === 100) {
       <p><a href="https://pages.github.com/">pages.github.com</a></p>
     </section>
     <section>
-      <h2></h2>
+      <h2>Static website</h2>
+      <h3>(plain old HTML/JS/CSS)</h3>
+      <img data-src="img/htmlcssjs.png" style="border:none;width: 100%;">
+    </section>
+    <section>
+      <h2>Jekyll</h2>
+      <img data-src="img/jekyll.jpg" style="border:none;width: 100%;">
+    </section>
+    <section>
+      <h2>Deploying</h2>
+      <pre><code class="bash" data-trim>
+$ git push
+      </code></pre>
+    </section>
+    <section>
+      <h2>URL</h2>
     </section>
     <section>
       <h2>Managing dependencies?</h2>
@@ -168,6 +185,7 @@ if (score === 100) {
       <pre class="fragment" data-fragment-index="0"><code class="bash" data-trim>
 $ git submodule add https://github.com/hakimel/reveal.js
       </pre></code>
+      <img class="fragment" data-fragment-index="0" data-src="img/shoptocat.png" style="border:none;width: 33%;">
     </section>
   </section>
   <section>
@@ -183,14 +201,6 @@ $ git submodule add https://github.com/hakimel/reveal.js
       </a>
     </section>
     <section>
-      <h2>.diff & .patch</h2>
-      <ul>
-        <li>Commit: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db" target="_blank">github.com/user/repo/commit/example</a></li>
-        <li>Diff: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db.diff" target="_blank">github.com/user/repo/commit/example.diff</a></li>
-        <li>Patch: <a href="https://github.com/maxpou/maxpou.github.io/commit/470da95b366bbb3efd8fa481308c906c955304db.patch" target="_blank">github.com/user/repo/commit/example.patch</a></li>
-      </ul>
-    </section>
-    <section>
       <h2>highlight lines</h2>
       <p><a href="https://github.com/maxpou-slides/github-tips-tricks/blob/8d09d0d17dc086972d39a004939cf3259fa4a6ee/index.html#L24-L31" target="_blank">github.com/user/repo/commit/example#L3-L5</a></p>
     </section>
@@ -198,6 +208,7 @@ $ git submodule add https://github.com/hakimel/reveal.js
   <section>
     <section>
       <h2>#6 - Emoji 😍</h2>
+      <p><a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji cheat sheet</a></p>
     </section>
     <section>
       <h2>Good example: Atom contributing’s style guides</h2>
@@ -206,8 +217,65 @@ $ git submodule add https://github.com/hakimel/reveal.js
   </section>
   <section>
     <section>
+      <h2>#7 - Templates</h2>
+    </section>
+    <section>
+      <p class="fragment">Issue #1</p>
+      <blockquote class="fragment">
+        User: It didn't works.
+      </blockquote>
+      <blockquote class="fragment">
+        Maintainer: Which version are you using? What is your OS/Browser... Can you provide the steps to reproduce?
+      </blockquote>
+      <blockquote class="fragment">
+        User: ...
+      </blockquote>
+      <p class="fragment">Issue #2</p>
+      <blockquote class="fragment">
+        User2: It didn't works.
+      </blockquote>
+      <blockquote class="fragment">
+        Maintainer: Haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </blockquote>
+    </section>
+    <section>
+      <h2>Template to the rescue!</h2>
+      <pre><code class="markdown" data-trim>
+(ISSUE_TEMPLATE.md)
+
+| Q                | A
+| ---------------- | -----
+| Bug report?      | yes/no
+| Feature request? | yes/no
+| BC Break report? | yes/no
+| RFC?             | yes/no
+| Tool version     | x.y.z
+
+**Description**
+
+**Version concerned**
+
+**Steps to reproduce the issue:**
+1.
+2.
+3.
+
+**Expected Results:**
+
+
+**Actual Results:**
+
+**Additional details:**
+      </pre></code>
+
+    </section>
+  </section>
+  <section>
+    <section>
       <h2>Full article</h2>
       <a href="http://www.maxpou.fr/github-tips-and-tricks/"><i class="fa fa-globe" aria-hidden="true"></i> maxpou.fr/github-tips-and-tricks</a>
+      <br>
+      <img data-src="img/labtocat.png" style="border:none;width: 33%;">
     </section>
     <section>
       <h2>Thank you</h2>
@@ -219,7 +287,7 @@ $ git submodule add https://github.com/hakimel/reveal.js
   </section>
   <section>
     <h2>Bonus</h2>
-    <p>I have some stikers !</p>
+    <p>I have some stickers!</p>
     <img data-src="img/stikers.png" style="border:none;width: 33%;">
   </section>
 </div>
